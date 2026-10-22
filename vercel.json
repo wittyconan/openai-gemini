@@ -1,10 +1,5 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
-  "functions": {
-    "api/**/*": {
-      "regions": ["iad1"]
-    }
-  },
   "rewrites": [
     { "source": "/(.*)", "destination": "api/handler" }
   ]
